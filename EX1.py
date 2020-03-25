@@ -22,7 +22,7 @@ if __name__== '__main__':
    c3 = c1 + c2
    c4 = c1 < c2
    c5 = c2 > c3
-   print(str(c3.getRadius()))
+   print("c3("+str(c3.getRadius())+")")
    print(c4)
    print(c5)
 
