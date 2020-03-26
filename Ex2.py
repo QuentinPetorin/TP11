@@ -35,8 +35,8 @@ class Complex:
 
 if __name__== '__main__':
 
-   c1 = Complex(1,2)
-   c2 = Complex(2,3)
+   c1 = Complex(2,3)
+   c2 = Complex(1,2)
    c3 = c1 + c2
    c4 = c1 - c2
    c5 = c1 * c2
