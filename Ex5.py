@@ -2,67 +2,77 @@ import numpy as np
 
 class Matrice:
 
-    def __init__(self,data=[]):
+    def __init__(self,data):
         self.__data = data
 
     def getData(self):
         return self.__data
 
- #   def modeliData(self,obj):
-
-  #      mat1 =
 
 
-
-
-   # def __add__(self,obj):
+    def __add__(self,obj): #M1
+        return (self.__data + obj.__data)
 
 
 
 
-   # def __iadd__(self,obj):
+    def __iadd__(self,obj): #M2
+        return (self.__data += obj.__data)
 
 
 
 
-   # def __sub__(self,obj):
+    def __sub__(self,obj): #M3
+        return (self.__data - obj.__data)
 
 
 
 
-   # def __isub__(self,obj):
+   # def __isub__(self,obj): #M4
 
 
 
 
-   # def __mul__(self, obj):
+   # def __mul__(self, obj): #M4
 
 
 
 
-    #def __imul__(self,obj):
+
+    #def __imul__(self,obj): #M5
 
 
 
 
-    #def __lshift__(self,obj):
+    def __lt__(self,obj): #M6
+        return (self.__data < obj.__data)
 
 
 
 
-   # def __rshift__(self,obj):
+    def __gt__(self,obj): #M7
+        return (self.__data > obj.__data)
+
+
+    def __len__(self,obj):
+        return len(obj)
 
 
 
-obj = Matrice(2345)
-print(obj.getData())
 
 
+if __name__ == '__main__':
 
-mat = [2345]
-one = str(mat[0])
-#two = str(mat[1])
-#tree = mat[2]
-#four = mat[3]
-mat.split
-#print(np.array(mat))
+    data1 = np.array([[1,2],[3,4]])
+    data2 = np.array([[2,2],[1,2]])
+    Mat1 = Matrice(data1)
+    Mat2 = Matrice(data2)
+    Mat3 = Mat1 + Mat2
+    Mat4 =
+    Mat5 =
+    Mat6 =
+    Mat7 =
+    Mat8 =
+    Mat9 =
+
+    print(Mat3)
