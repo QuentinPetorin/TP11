@@ -34,7 +34,7 @@ class Duree :
             Minute -= 60
             Heure += 1
 
-        return Heure,Minute,Seconde
+        return Heure,"H",Minute,"m",Seconde,"s"
 
 if __name__ == '__main__':
     d1 = Duree(1,22,34)
